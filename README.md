@@ -68,3 +68,5 @@ We first use decisions tress to create our model `clf=DecisionTreeClassifier(cri
   * `precision = No Heart Disease: 0.79 --- Heart Disease: 0.91`
   * `recall = No Heart Disease: 0.90 --- Heart Disease: 0.80` 
   * `f1-score = No Heart Disease: 0.84 --- Heart Disease: 0.85 `
+
+## Conclusion
