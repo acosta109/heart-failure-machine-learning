@@ -17,7 +17,7 @@ Our aim to produce a machine learning model that evaluates 11 factors to determi
 * Oldpeak
 * ST_Slope
  
-To get a general overview of our data:
+To get a general overview of our data we used `df.describe().T` and observed the following:
 
 * `Avg. Age = 53.5`
 * `Avg. RestingBP = 132`
@@ -33,3 +33,4 @@ To get a general overview of our data:
 ### Correlation Chart of the Data
 ![correlation](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/a1c8e2e8-4c1d-4cd8-bfa0-e5256af240da)
 
+We first use decisions tress to create our model `clf=DecisionTreeClassifier(criterion="entropy")`. We found a maximum accuracy with `fold=3`.  Next, we decided to create a model for our dataset using RandomTree `clf=RandomForestClassifier(n_estimators=200,criterion="entropy")`. 
