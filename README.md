@@ -1,6 +1,9 @@
 # Predicting Heart Disease Using Machine Learning
 ## Team: Anthony Costa, Jonathan Diaz, Sarah Kim, Aakash Nagalapura
 ### [Data Set](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
+### Jupyter Notebook
+### PowerPoint Presentation
+
 
 # Overview of the Analysis
 Our aim to produce a machine learning model that evaluates 11 factors to determine if someone has heart disease. 
@@ -31,6 +34,36 @@ To get a general overview of our data we used `df.describe().T` and observed the
 ### Heart Disease Ratio by Sex
 ![heart disease ratio](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/853b48ca-2539-4d64-ab64-e89b61211409)
 ### Correlation Chart of the Data
-![correlation](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/a1c8e2e8-4c1d-4cd8-bfa0-e5256af240da)
+![correlation](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/59acdd95-0462-48ba-8218-682dfe0c12ce)
 
-We first use decisions tress to create our model `clf=DecisionTreeClassifier(criterion="entropy")`. We found a maximum accuracy with `fold=3`.  Next, we decided to create a model for our dataset using RandomTree `clf=RandomForestClassifier(n_estimators=200,criterion="entropy")`. 
+
+We first use decisions tress to create our model `clf=DecisionTreeClassifier(criterion="entropy")`. We found a maximum accuracy with `fold=2`.  Next, we decided to create a model for our dataset using RandomTree `clf=RandomForestClassifier(n_estimators=200,criterion="entropy")`.  Lastly, we created a LogisiticRegression model `clf=LogisticRegression()`.
+
+## Results
+
+* Machine Learning Model 1: 
+  * `clf=DecisionTreeClassifier(criterion="entropy")`
+  * `fold = 2`
+  * `accuracy = 0.898`
+  * `precision = No Heart Disease: 0.77 --- Heart Disease: 0.92`
+  * `recall = No Heart Disease: 0.91 --- Heart Disease: 0.77` 
+  * `f1-score = No Heart Disease: 0.83 --- Heart Disease: 0.84 `
+
+* Machine Learning Model 2: 
+  * `clf=RandomForestClassifier(n_estimators=200,criterion="entropy")`
+  * `fold = 1`
+  * `accuracy = 0.767`
+  * `precision = No Heart Disease: 0.85 --- Heart Disease: 0.75`
+  * `recall = No Heart Disease: 0.62 --- Heart Disease: 0.91` 
+  * `f1-score = No Heart Disease: 0.72 --- Heart Disease: 0.82 `
+
+![feature_imp](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/4fc03055-ab4d-4526-baae-88f3470d5dbd)
+
+
+* Machine Learning Model 3: 
+  * `clf=LogisticRegression()`
+  * `fold = 1`
+  * `accuracy = 0.889`
+  * `precision = No Heart Disease: 0.79 --- Heart Disease: 0.91`
+  * `recall = No Heart Disease: 0.90 --- Heart Disease: 0.80` 
+  * `f1-score = No Heart Disease: 0.84 --- Heart Disease: 0.85 `
