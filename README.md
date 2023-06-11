@@ -1,8 +1,8 @@
 # Predicting Heart Disease Using Machine Learning
 ## Team: Anthony Costa, Jonathan Diaz, Sarah Kim, Aakash Nagalapura
 ### [Data Set](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
-### Jupyter Notebook
-### PowerPoint Presentation
+### [Jupyter Notebook](https://github.com/acosta109/heart-failure-machine-learning/blob/main/heart_disease/heart_disease.ipynb)
+### [PowerPoint Presentation](https://github.com/acosta109/heart-failure-machine-learning/blob/main/heart_disease/heart-disease-ppt.pptx)
 
 
 # Overview of the Analysis
