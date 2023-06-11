@@ -34,7 +34,8 @@ To get a general overview of our data we used `df.describe().T` and observed the
 ### Heart Disease Ratio by Sex
 ![heart disease ratio](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/853b48ca-2539-4d64-ab64-e89b61211409)
 ### Correlation Chart of the Data
-![correlation](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/59acdd95-0462-48ba-8218-682dfe0c12ce)
+![correlation](https://github.com/acosta109/heart-failure-machine-learning/assets/119609975/21acb103-6c53-407b-8fa4-8904312b5230)
+
 
 
 We first use decisions tress to create our model `clf=DecisionTreeClassifier(criterion="entropy")`. We found a maximum accuracy with `fold=2`.  Next, we decided to create a model for our dataset using RandomTree `clf=RandomForestClassifier(n_estimators=200,criterion="entropy")`.  Lastly, we created a LogisiticRegression model `clf=LogisticRegression()`.
