@@ -70,3 +70,5 @@ We first use decisions tress to create our model `clf=DecisionTreeClassifier(cri
   * `f1-score = No Heart Disease: 0.84 --- Heart Disease: 0.85 `
 
 ## Conclusion
+
+From the results above, we can see the DecisionTreeClassifier when `fold=2` is the most accurate model we created `0.898 > 0.889 > 0.767`. However, we should note model 1 and 3 have higher recall scores for `No Heart Disease` while model 2 has higher recall for `Heart Disease`. Comparing model 1 to 3, model 3 has a `higher recall score` meaning model 3 was able to identify more people with heart disease. Therefore, deciding which model is best for application comes from further analysis of the models, rather than looking at the accuracy of each model. 
